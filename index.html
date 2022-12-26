@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AvinashRawat</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </head>
+
+  <body>
+    <div id="progress-bar"></div>
+
+    <div class="container">
+      <!-- INTRODUCTION -->
+      <div class="intro">
+        <div class="salute">
+          <div class="saluteTextContainer">
+            <h1 class="saluteText">Hi</h1>
+            <h2 class="saluteTextName">I'm Avinash</h2>
+          </div>
+          <div class="saluteImageContainer">
+            <div class="imgSliderBox"></div>
+            <img src="./img/person.jpg" alt="" class="saluteImg" />
+          </div>
+          <div class="swipUp"><img src="/img/swip.png" alt="" /></div>
+        </div>
+        <div class="jobTitleContainer dark">
+          <h2 class="jobTitle">
+            &lt;&gt; I'm a FullStack Web Developer; &lt;/&gt;
+          </h2>
+          <a style="text-decoration: none" href="/img/bootstrap.png" download
+            ><button class="ButtonStart">Download CV</button></a
+          >
+        </div>
+        <div class="jobTitleContainer purple">
+          <h2 class="jobSkills">Skills<span>( ).</span></h2>
+          <div class="iconsTOP">
+            <div class="iconsImg">
+              <img src="/img/html.png" alt="" />
+              <h2>HTML</h2>
+            </div>
+            <div class="iconsImg">
+              <img src="/img/css.png" alt="" />
+              <h2>CSS</h2>
+            </div>
+            <div class="iconsImg">
+              <img src="/img/js.png" alt="" />
+              <h2>JAVACRIPT</h2>
+            </div>
+            <div class="iconsImg">
+              <img src="/img/react.png" alt="" />
+              <h2>REACTJS</h2>
+            </div>
+          </div>
+          <div class="iconsBottom">
+            <div class="iconsImg">
+              <img src="/img/angular.png" alt="" />
+              <h2>ANGULAR</h2>
+            </div>
+            <div class="iconsImg">
+              <img src="/img/node.png" alt="" />
+              <h2>NODE</h2>
+            </div>
+            <div class="iconsImg">
+              <img src="/img/php.png" alt="" />
+              <h2>PHP</h2>
+            </div>
+            <div class="iconsImg">
+              <img src="/img/mongo.png" alt="" />
+              <h2>MONOGODB</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="projects">
+        <h1 class="projectsTitle">Here are some of my projects</h1>
+        <div class="project">
+          <div class="phone">
+            <img src="./img/phone.png" class="phoneDummy" />
+            <div class="phoneScreen">
+              <img src="./img/cinema.png" class="phoneApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">Cinema<sup>+</sup></h1>
+            <p class="projectDesc">
+              Cinema<sup>+</sup> is a responsive movie streaming web app which is
+              developed  using <u>reactJS.</u> I utilized <u>functional components,hooks,
+              and props </u> to create a smooth and efficient user experience. The
+              app boasts a beautiful and intiuative UI that adapts to <u>different
+              screen sizes</u>. The app uses a public api to fetch movie data,
+              allowing users to browse and watch movies organized into
+              categories, and search for specific movie. Overall, the app
+              provides an ejoyable and convienient way for users to discover and
+              watch their favorite films.
+            </p>
+           <a href="https://ciinema-plus.web.app/" target="_blank"><button class="projectButton">Check Site</button></a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="laptop">
+            <img src="./img/laptop.png" class="phoneDummy" />
+            <div class="laptopScreen">
+              <img src="./img/sea.png" class="phoneApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">SocialSea</h1>
+            <p class="projectDesc">
+              SocialSea is a social media  website which is developed using <u>ReactJS and Firebase</u>. The
+              website allows users to sign up and log in,
+               securely handled by <u>Firebase's authentication service </u>.
+              Users can post photos and articles on the platform. The
+              website utilizes <u>React's functional components and hooks</u> to
+              optimize the user experience. Firebase's real-time database is
+              used to store and retrieve user data. <br> Test username : <u>user@sea.com</u> & password: <u>123456</u>
+            </p>
+            
+          <a href="https://social-sea.web.app/login" target="_blank"><button class="projectButton">Check Site</button></a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="phone blockDiv">
+            <img src="./img/phone.png" class="phoneDummy" />
+            <div class="phoneScreen">
+              <img src="./img/phoneApp.jpeg" class="phoneApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle"> findMeOnGithub()</h1>
+            <p class="projectDesc">
+              Thanku you for visiting my portfolio. If you want to see more of my projects and
+              code, please feel free to check out my Github profile onlyAvinash.
+              There, u can find codes of above projects and many more.
+              scroll down to contact me ;
+            </p>
+           <a href="https://github.com/onlyAvinash" target="_blank"><button class="projectButton">Check Github</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- contact-->
+
+      <div class="contactContainer">
+        <h1 class="contactTitle">Connect with Me</h1>
+        <div class="connect">
+          <div class="socialMedia">
+            <div class="socialId">
+              <a
+                href="https://github.com/onlyAvinash"
+                target="_blank"
+                title="github"
+              >
+                <img src="./img/git.png" alt="" />
+              </a>
+              <a
+                class="textA"
+                href="https://github.com/onlyAvinash"
+                style="text-decoration: none; color: rgb(70, 70, 70)"
+                ><h2>onlyAvinash</h2></a
+              >
+            </div>
+            <div class="socialId">
+              <a href="" title="linkedin">
+                <img src="./img/link.png" alt="" />
+              </a>
+              <a
+                class="textA"
+                href=""
+                style="text-decoration: none; color: rgb(70, 70, 70)"
+                ><h2>avi@github.com</h2></a
+              >
+            </div>
+            <div class="socialId">
+              <a
+                href="mailto:iamavi2626@gmail.com?subject = fromPortfolio&body = Message"
+                title="gmail"
+              >
+                <img src="./img/gmail.png" alt="" />
+              </a>
+              <a
+                class="textA"
+                href="mailto:iamavi2626@gmail.com?subject = fromPortfolio&body = Message"
+                style="text-decoration: none; color: rgb(70, 70, 70)"
+                ><h2>iamavi2626@gmail.com</h2></a
+              >
+            </div>
+          </div>
+          <form
+            target="_blank"
+            action="https://formsubmit.co/iamavi2626@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanku.html"
+            />
+            <div class="emailForm">
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter Email"
+                class="emailInput"
+                required
+              />
+
+              <textarea
+                class="emailTextarea"
+                placeholder="Message"
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <button type="submit" class="emailSubmit">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="preLoadingcontainer">
+      <div class="preLoader">
+        <img src="./img/load.png" alt="" />
+      </div>
+      <div class="preLoaderOverlay">
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+        <div class="block block-3"></div>
+        <div class="block block-4"></div>
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-7"></div>
+        <div class="block block-8"></div>
+        <div class="block block-9"></div>
+        <div class="block block-10"></div>
+        <div class="block block-11"></div>
+        <div class="block block-12"></div>
+        <div class="block block-13"></div>
+        <div class="block block-14"></div>
+        <div class="block block-15"></div>
+        <div class="block block-16"></div>
+        <div class="block block-17"></div>
+        <div class="block block-18"></div>
+        <div class="block block-19"></div>
+        <div class="block block-20"></div>
+      </div>
+    </div>
+
+    <script>
+      TweenMax.from("body", 2.5, {
+        overflow: "hidden",
+      });
+      TweenMax.staggerFrom(
+        ".block",
+        0.8,
+        {
+          // display:"block",
+          width: "0%",
+          ease: Power1.easeIn,
+          delay: 1.5,
+        },
+        0.04
+      );
+      TweenMax.to(".preLoader", 1, {
+        x: 2,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 1.5,
+      });
+      TweenMax.to(".preLoadingcontainer", 1, {
+        // x: 2,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 2.5,
+      });
+      TweenMax.from(
+        ".intro,.projects,.contactContainer,#progress-bar",
+        2,
+        {
+          opacity: 0,
+          y: 100,
+          ease: Expo.easeInOut,
+          delay: 2.5,
+        },
+        0.06
+      );
+      TweenMax.to(".imgSliderBox", 0.2, {
+        opacity: 1,
+        ease: Expo.easeInOut,
+        delay: 2.2,
+      });
+      TweenMax.to(".saluteImg", 0.2, {
+        opacity: 1,
+        ease: Expo.easeInOut,
+        delay: 2.3,
+      });
+      TweenMax.to(".imgSliderBox", 2, {
+        y: "-100%",
+        ease: Expo.easeInOut,
+        delay: 2.5,
+      });
+    </script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
