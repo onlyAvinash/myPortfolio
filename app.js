@@ -15,7 +15,7 @@ const laptop = document.querySelector(".laptop")
 
 const animateProgressBar = () => {
     let scrollDistance = -section.getBoundingClientRect().top;
-     let progressWidth = (scrollDistance / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100;
+    let progressWidth = (scrollDistance / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100;
     
     // console.log(progressWidth);
     let value = Math.floor(progressWidth);
@@ -45,4 +45,55 @@ window.addEventListener("scroll",()=>{
 })
 
 
+// its for navbar navigation
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            let sectionId = link.getAttribute('href');
+            scrollToSection(sectionId);
+        });
+    });
+});
 
+function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    const sectionPosition = section.getBoundingClientRect().top;
+    window.scrollBy({
+        top: sectionPosition,
+        behavior: 'smooth'
+    });
+}
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+});
+
+//add hamburger 
+var hamburger = document.querySelector('.hamburger');
+function toggleNav() {
+  hamburger.classList.toggle('change');
+  var navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+//remove hamburger menu
+// Get the main content and navbar elements
+var navbar = document.querySelector('.navbar');
+
+// Add an event listener to the main content that will listen for clicks
+section.addEventListener('click', function(e) {
+  // Check if the click was inside the navbar
+  if(navbar.contains(e.target)) {
+    // Do nothing if the click was inside the navbar
+    return;
+  }
+  // If the click was outside the navbar, close the navlinks section
+    var navLinks = document.querySelector('.nav-links');
+    
+    if (navLinks.classList.contains('active')) {
+    navLinks.classList.remove('active');
+    hamburger.classList.toggle('change');
+  }
+});
